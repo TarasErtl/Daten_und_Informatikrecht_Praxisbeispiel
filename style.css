@@ -31,7 +31,7 @@ body {
   text-align: center;
   margin-top: 4rem;
   position: relative;
-  background-image: url('book_bild.jpg');
+  background-image: var(--pricing-bg-image);
   background-size: cover;
   background-position: center;
   padding: 4rem 0;
