@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressum & Kontakt - bMARK</title>
+    <title>Impressum & Kontakt - my-bMARK</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,10 +11,19 @@
 
     <header role="banner">
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">bMARK</a>
+            <a href="index.html" class="brand-text">my-bMARK</a>
+            
+            <a href="index.html" class="center-logo" aria-label="Zur Startseite">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                    <path d="M12 7.5l1.2 2.8 3 .3-2.3 2 .7 3-2.6-1.6-2.6 1.6.7-3-2.3-2 3-.3z" fill="var(--bg-card)"/>
+                </svg>
+            </a>
+
             <nav role="navigation" aria-label="Hauptmenü">
                 <ul>
                     <li><a href="index.html">App</a></li>
+                    <li><a href="ueber_uns.html">Über uns</a></li>
                     <li><a href="lizenz.html">Lizenz</a></li>
                     <li><a href="datenschutz.html">Datenschutz</a></li>
                     <li><a href="impressum.html" aria-current="page">Kontakt</a></li>
@@ -23,41 +32,110 @@
         </div>
     </header>
 
-    <main id="main-content" role="main" class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
+    <main id="main-content" role="main" class="container main-content-padding">
         
-        <h1 style="text-align: center; margin-bottom: 2rem;">Kontakt & Impressum</h1>
+        <h1 class="page-title">Kontakt & Impressum</h1>
 
         <div class="grid-2">
             <section class="card">
                 <h3>So erreichen Sie uns</h3>
                 <p>Haben Sie Fragen zur App oder Probleme mit dem Abo?</p>
-                <p><strong>E-Mail:</strong><br> <a href="mailto:support@bmark-example.at">support@bmark-example.at</a></p>
+                <p><strong>E-Mail:</strong><br> <a href="mailto:support@my-bmark-example.at">support@my-bmark-example.at</a></p>
                 <p><strong>Telefon:</strong><br> +43 123 456789</p>
                 <br>
-                <button class="btn btn-primary">Support-Ticket öffnen</button>
+                
+                <!-- Kontaktformular -->
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Anliegen</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Senden</button>
+                </form>
+
+                <!-- Erfolgsmeldung (initial ausgeblendet) -->
+                <div id="success-message" role="alert">
+                    <strong>Vielen Dank!</strong><br>Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.
+                </div>
             </section>
 
             <section class="card">
                 <h3>Impressum</h3>
-                <p style="font-size: 0.9rem; color: var(--text-muted);">Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.</p>
-                <hr style="border: 0; border-top: 1px solid #eee; margin: 1rem 0;">
+                <p class="text-muted-sm">Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.</p>
+                <hr class="styled-hr" style="margin-top: 1rem; margin-bottom: 1rem;">
                 
-                <p><strong>bMARK Start-Up</strong><br>
+                <p><strong>Medieninhaber und Herausgeber:</strong><br>
+                my-bMARK GmbH<br>
                 Musterstraße 1<br>
                 1010 Wien, Österreich</p>
 
+                <p><strong>Vertreten durch den Geschäftsführer:</strong><br>
+                Taras Ertl</p>
+
                 <p><strong>Unternehmensgegenstand:</strong><br>Entwicklung und Vertrieb von Software-Applikationen.</p>
                 
-                <p><strong>Mitglied der WKÖ</strong></p>
+                <p><strong>UID-Nummer:</strong><br>ATU12345678</p>
+
+                <p><strong>Firmenbuchnummer:</strong><br> FN 987654w</p>
+                <p><strong>Firmenbuchgericht:</strong><br> Handelsgericht Wien</p>
+
+                <p><strong>Mitglied bei:</strong><br>Wirtschaftskammer Österreich (WKÖ)</p>
+
+                <p><strong>Aufsichtsbehörde/Gewerbebehörde:</strong><br>Magistratisches Bezirksamt für den 1. Bezirk</p>
+
+                <p><strong>Anwendbare Rechtsvorschriften:</strong><br>
+                Gewerbeordnung: <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener">www.ris.bka.gv.at</a></p>
+
+                <p><strong>Grundlegende Richtung des Mediums ("Blattlinie"):</strong><br>
+                Informationen über die Software-Applikation "my-bMARK", deren Funktionen und die damit verbundenen Lizenz- und Kaufoptionen.</p>
             </section>
         </div>
+
+        <!-- Aufgabe 2: Urheberrechtshinweise & Bildnachweise -->
+        <section class="card copyright-section">
+            <h3>Bildnachweise & Urheberrecht</h3>
+            <ul class="styled-list">
+                <li>
+                    <strong>Video (Startseite):</strong> "Buchen Seiten Literatur Strand" (ID: 185096)<br>
+                    <span class="text-muted-sm">Quelle: <a href="https://pixabay.com/de/videos/buchen-seiten-literatur-strand-185096/" target="_blank" rel="noopener">Pixabay</a>. Lizenz: Pixabay License (Freie kommerzielle Nutzung, kein Bildnachweis erforderlich).</span>
+                </li>
+                <li>
+                    <strong>Bild (Pricing):</strong> "Bücher Herz Seiten" (ID: 5615562)<br>
+                    <span class="text-muted-sm">Quelle: <a href="https://pixabay.com/de/photos/b%c3%bccher-herz-seiten-literatur-5615562/" target="_blank" rel="noopener">Pixabay</a>. Lizenz: Pixabay License.</span>
+                </li>
+                <li>
+                    <strong>Icons:</strong> Eigene Darstellung (selbst erstellt).
+                </li>
+                <li>
+                    <strong>Schriftarten:</strong> Die Schriftart "Segoe UI" wird als Systemschriftart lokal vom Gerät des Nutzers geladen (CSS-Referenz). Es erfolgt keine Einbettung oder Verbreitung von geschützten Schriftdateien (Webfonts).
+                </li>
+            </ul>
+        </section>
 
     </main>
 
     <footer role="contentinfo">
     <div class="container">
-        <p>&copy; 2025 bMARK Start-Up. Alle Rechte vorbehalten. | <a href="barrierefreiheit.html" style="color: #fff;">Barrierefreiheit</a></p>
+        <p>&copy; 2025 my-bMARK GmbH. Alle Rechte vorbehalten. | <a href="barrierefreiheit.html">Barrierefreiheit</a></p>
     </div>
     </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Verhindert das echte Neuladen der Seite
+            
+            // Formular ausblenden und Erfolgsmeldung anzeigen
+            this.style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        });
+    </script>
 </body>
 </html>

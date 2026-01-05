@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutz - bMARK</title>
+    <title>Datenschutz - my-bMARK</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,10 +11,19 @@
 
     <header role="banner">
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">bMARK</a>
+            <a href="index.html" class="brand-text">my-bMARK</a>
+            
+            <a href="index.html" class="center-logo" aria-label="Zur Startseite">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                    <path d="M12 7.5l1.2 2.8 3 .3-2.3 2 .7 3-2.6-1.6-2.6 1.6.7-3-2.3-2 3-.3z" fill="var(--bg-card)"/>
+                </svg>
+            </a>
+
             <nav role="navigation" aria-label="Hauptmenü">
                 <ul>
                     <li><a href="index.html">App</a></li>
+                    <li><a href="ueber_uns.html">Über uns</a></li>
                     <li><a href="lizenz.html">Lizenz</a></li>
                     <li><a href="datenschutz.html" aria-current="page">Datenschutz</a></li>
                     <li><a href="impressum.html">Kontakt</a></li>
@@ -23,24 +32,43 @@
         </div>
     </header>
 
-    <main id="main-content" role="main" class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
+    <main id="main-content" role="main" class="container main-content-padding">
         
-        <h1 style="text-align: center; margin-bottom: 2rem;">Datenschutzerklärung</h1>
+        <h1 class="page-title">Datenschutzerklärung</h1>
 
         <div class="card">
-            <article style="margin-bottom: 2rem;">
+            <article class="mb-2">
                 <h3>1. Speicherung von Inhaltsdaten (Cloud Sync)</h3>
                 <p>Die von Ihnen in der App gespeicherten Zitate, Buchcover und Notizen werden auf unseren Servern verschlüsselt abgelegt. Dies ist technisch notwendig, um die Synchronisation zwischen Ihren verschiedenen Endgeräten zu ermöglichen.</p>
             </article>
 
-            <article style="margin-bottom: 2rem;">
+            <article class="mb-2">
                 <h3>2. Account- & Zahlungsdaten</h3>
-                <p>Für die Abo-Verwaltung speichern wir Ihre E-Mail-Adresse und den aktuellen Abo-Status. Kreditkartendaten werden ausschließlich durch unseren Zahlungsdienstleister verarbeitet und nicht auf bMARK-Servern gespeichert. (Hinweis: Dies ist ein Mockup-Projekt, es werden keine echten Zahlungen verarbeitet).</p>
+                <p>Für die Abo-Verwaltung speichern wir Ihre E-Mail-Adresse und den aktuellen Abo-Status. Kreditkartendaten werden ausschließlich durch unseren Zahlungsdienstleister verarbeitet und nicht auf my-bMARK-Servern gespeichert.</p>
             </article>
             
-            <article>
+            <article class="mb-2">
                 <h3>3. Analyse & Cookies</h3>
-                <p>Wir verwenden technisch notwendige Cookies zur Sitzungsverwaltung (Session-ID). Tracking-Tools (wie Google Analytics) sind zu Demonstrationszwecken im Code simuliert, senden jedoch keine realen Daten an Dritte.</p>
+                <p>Wir verwenden technisch notwendige Cookies zur Sitzungsverwaltung (Session-ID). Tracking-Tools (wie Google Analytics) senden keine realen Daten an Dritte.</p>
+            </article>
+
+            <article class="mb-2">
+                <h3>4. Kontaktformular</h3>
+                <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+            </article>
+
+            <article class="mb-2">
+                <h3>5. Ihre Rechte</h3>
+                <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.</p>
+            </article>
+
+            <article>
+                <h3>6. Verantwortlicher</h3>
+                <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist die im Impressum genannte Person bzw. das dort genannte Unternehmen:</p>
+                <p>my-bMARK GmbH<br>
+                Musterstraße 1<br>
+                1010 Wien, Österreich</p>
+                <p>E-Mail: <a href="mailto:support@my-bmark-example.at">support@my-bmark-example.at</a></p>
             </article>
         </div>
 
@@ -48,7 +76,7 @@
 
     <footer role="contentinfo">
     <div class="container">
-        <p>&copy; 2025 bMARK Start-Up. Alle Rechte vorbehalten. | <a href="barrierefreiheit.html" style="color: #fff;">Barrierefreiheit</a></p>
+        <p>&copy; 2025 my-bMARK GmbH. Alle Rechte vorbehalten. | <a href="barrierefreiheit.html">Barrierefreiheit</a></p>
     </div>
     </footer>
 </body>

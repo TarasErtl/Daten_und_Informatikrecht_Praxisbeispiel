@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über uns - bMARK</title>
+    <title>Über uns - my-bMARK</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,15 @@
 
     <header role="banner">
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">bMARK</a>
+            <a href="index.html" class="brand-text">my-bMARK</a>
+            
+            <a href="index.html" class="center-logo" aria-label="Zur Startseite">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                    <path d="M12 7.5l1.2 2.8 3 .3-2.3 2 .7 3-2.6-1.6-2.6 1.6.7-3-2.3-2 3-.3z" fill="var(--bg-card)"/>
+                </svg>
+            </a>
+
             <nav role="navigation" aria-label="Hauptmenü">
                 <ul>
                     <li><a href="index.html">App</a></li>
@@ -24,25 +32,25 @@
         </div>
     </header>
 
-    <main id="main-content" role="main" class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
+    <main id="main-content" role="main" class="container main-content-padding">
         
-        <h1 style="text-align: center; margin-bottom: 2rem;">Wer wir sind</h1>
+        <h1 class="page-title">Wer wir sind</h1>
 
-        <div class="card" style="margin-bottom: 2rem;">
+        <div class="card mb-2">
             <h2>Das Unternehmen</h2>
             <p>
-                <strong>bMARK Start-Up</strong> ist ein junges Softwareunternehmen mit Sitz im Herzen von <strong>Wien, Österreich</strong>.
-                Gegründet wurde bMARK mit der Vision, das analoge Lesen nahtlos mit der digitalen Welt zu verbinden.
+                Die <strong>my-bMARK GmbH</strong> ist ein junges Softwareunternehmen mit Sitz im Herzen von <strong>Wien, Österreich</strong>.
+                Gegründet wurde my-bMARK mit der Vision, das analoge Lesen nahtlos mit der digitalen Welt zu verbinden.
             </p>
         </div>
 
-        <div class="grid-2">
+        <div class="grid-2 mb-2">
             <section class="card">
                 <h3>Unser Team</h3>
                 <p>
                     Wir sind ein <strong>8-köpfiges Team</strong> aus:
                 </p>
-                <ul style="color: var(--text-muted); margin-bottom: 0;">
+                <ul class="styled-list" style="color: var(--text-muted);">
                     <li>3 Software-Entwicklern</li>
                     <li>2 UI/UX Designern</li>
                     <li>1 Produktmanager</li>
@@ -58,11 +66,62 @@
             </section>
         </div>
 
+        <!-- Aufgabe 3: Marken & Identität -->
+        <section class="card">
+            <h2>Unsere Markenidentität</h2>
+            <p>Um die Einzigartigkeit von my-bMARK zu schützen und Verwechslungen auszuschließen, haben wir unsere Identität in drei Markenformen definiert und rechtlich geschützt.</p>
+            
+            <div class="brand-grid">
+                <!-- 1. Wortmarke -->
+                <div class="brand-card">
+                    <h4>1. Die Wortmarke</h4>
+                    <div class="brand-visual" style="font-weight: 800; font-size: 2rem; letter-spacing: -1px;">my-bMARK</div>
+                    <p class="text-muted-sm">
+                        Der Name setzt sich aus "my" (persönlich), "Book" und "Bookmark" zusammen. Er ist als reines Schriftzeichen geschützt.
+                    </p>
+                </div>
+
+                <!-- 2. Bildmarke -->
+                <div class="brand-card">
+                    <h4>2. Die Bildmarke</h4>
+                    <div class="brand-visual">
+                        <!-- SVG Icon: Bookmark -->
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <!-- Basis Lesezeichen -->
+                            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                            <!-- Stern-Ausschnitt (simuliert durch Hintergrundfarbe) für Individualität -->
+                            <path d="M12 7.5l1.2 2.8 3 .3-2.3 2 .7 3-2.6-1.6-2.6 1.6.7-3-2.3-2 3-.3z" fill="var(--bg-body)"/>
+                        </svg>
+                    </div>
+                    <p class="text-muted-sm">
+                        Unser Lesezeichen-Symbol mit integriertem Stern. Es steht visuell für das Speichern und Favorisieren von wertvollem Wissen.
+                    </p>
+                </div>
+
+                <!-- 3. Slogan-Marke -->
+                <div class="brand-card">
+                    <h4>3. Der Slogan</h4>
+                    <div class="brand-visual" style="font-size: 1.2rem; font-style: italic; font-family: serif;">"Deine Bibliothek für Gedanken."</div>
+                    <p class="text-muted-sm">
+                        Unser Claim, der die Funktion der App für die Zielgruppe (Studierende) auf den Punkt bringt.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Nizza-Klassifikation</h3>
+            <p>Unsere Marken sind im Markenregister für folgende Waren- und Dienstleistungsklassen (Nizza-Klassen) eingetragen:</p>
+            <ul class="styled-list">
+                <li><strong>Klasse 9:</strong> Herunterladbare Software, Mobile Applikationen, elektronische Publikationen.</li>
+                <li><strong>Klasse 35:</strong> Werbung, Geschäftsführung, Online-Einzelhandel mit Software.</li>
+                <li><strong>Klasse 42:</strong> Software as a Service (SaaS), Cloud-Computing-Dienste, Hosting von Speicherplatz.</li>
+            </ul>
+        </section>
+
     </main>
 
     <footer role="contentinfo">
     <div class="container">
-        <p>&copy; 2025 bMARK Start-Up. Alle Rechte vorbehalten. | <a href="barrierefreiheit.html" style="color: #fff;">Barrierefreiheit</a></p>
+        <p>&copy; 2025 my-bMARK GmbH. Alle Rechte vorbehalten. | <a href="barrierefreiheit.html">Barrierefreiheit</a></p>
     </div>
     </footer>
 </body>

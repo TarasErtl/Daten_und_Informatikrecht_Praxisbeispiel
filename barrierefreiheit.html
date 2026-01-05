@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barrierefreiheitserklärung - bMARK</title>
+    <title>Barrierefreiheitserklärung - my-bMARK</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,15 @@
 
     <header role="banner">
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">bMARK</a>
+            <a href="index.html" class="brand-text">my-bMARK</a>
+            
+            <a href="index.html" class="center-logo" aria-label="Zur Startseite">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                    <path d="M12 7.5l1.2 2.8 3 .3-2.3 2 .7 3-2.6-1.6-2.6 1.6.7-3-2.3-2 3-.3z" fill="var(--bg-card)"/>
+                </svg>
+            </a>
+
             <nav role="navigation" aria-label="Hauptmenü">
                 <ul>
                     <li><a href="index.html">App</a></li>
@@ -24,49 +32,38 @@
         </div>
     </header>
 
-    <main id="main-content" role="main" class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
+    <main id="main-content" role="main" class="container main-content-padding">
         
-        <h1 style="text-align: center; margin-bottom: 2rem;">Barrierefreiheitserklärung</h1>
+        <h1 class="page-title">Barrierefreiheitserklärung</h1>
 
-        <section class="card" style="margin-bottom: 2rem;">
+        <section class="card mb-2">
             <h3>1. Geltungsbereich</h3>
-            <p>Diese Erklärung zur Barrierefreiheit gilt für die Website <strong>www.bmark-example.at</strong> (bzw. dieses Projekt).</p>
+            <p>Diese Erklärung zur Barrierefreiheit gilt für die Website <strong>www.my-bmark-example.at</strong> (bzw. dieses Projekt).</p>
             <p>Wir bemühen uns, unsere Website im Einklang mit dem <em>Web-Zugänglichkeits-Gesetz (WZG)</em> zur Umsetzung der Richtlinie (EU) 2016/2102 barrierefrei zugänglich zu machen.</p>
         </section>
 
-        <section class="card" style="margin-bottom: 2rem;">
+        <section class="card mb-2">
             <h3>2. Stand der Vereinbarkeit</h3>
-            <p>Diese Website ist mit der <strong>WCAG 2.1, Konformitätsstufe AA</strong> <strong>teilweise vereinbar</strong>.</p>
+            <p>Diese Website ist mit der <strong>Konformitätsstufe AA der Richtlinien für barrierefreie Webinhalte (WCAG 2.2)</strong> <strong>vollständig vereinbar</strong>.</p>
         </section>
 
-        <section class="card" style="margin-bottom: 2rem;">
-            <h3>3. Nicht barrierefreie Inhalte</h3>
-            <p>Die nachstehend aufgeführten Inhalte sind aus folgenden Gründen nicht barrierefrei:</p>
-            <ul>
-                <li><strong>a) Unvereinbarkeit mit den Barrierefreiheitsbestimmungen:</strong><br>
-                Einige ältere PDF-Dokumente im Download-Bereich sind noch nicht vollständig getaggt. Wir arbeiten an einer Aktualisierung.</li>
-                <li><strong>b) Unverhältnismäßige Belastung:</strong><br>
-                Für Live-Videos (Webinare) können wir derzeit keine Untertitel in Echtzeit bereitstellen.</li>
-            </ul>
-        </section>
-
-        <section class="card" style="margin-bottom: 2rem;">
-            <h3>4. Erstellung dieser Erklärung zur Barrierefreiheit</h3>
+        <section class="card mb-2">
+            <h3>3. Erstellung dieser Erklärung zur Barrierefreiheit</h3>
             <p>Diese Erklärung wurde am <strong>26. Oktober 2025</strong> erstellt.</p>
             <p>Die Bewertung der Vereinbarkeit der Website mit dem WZG zur Umsetzung der Anforderungen der Richtlinie (EU) 2016/2102 erfolgte in Form eines <strong>Selbsttests</strong>.</p>
         </section>
 
         <section class="card">
-            <h3>5. Feedback und Kontaktangaben</h3>
+            <h3>4. Feedback und Kontaktangaben</h3>
             <p>Wenn Ihnen Barrieren auffallen, die Sie an der Benutzung unserer Website behindern, teilen Sie uns dies bitte per E-Mail mit.</p>
-            <p><strong>Kontakt:</strong> <a href="mailto:support@bmark-example.at">support@bmark-example.at</a></p>
+            <p><strong>Kontakt:</strong> <a href="mailto:support@my-bmark-example.at">support@my-bmark-example.at</a></p>
             
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 1.5rem 0;">
+            <hr class="styled-hr">
             
             <h4>Durchsetzungsverfahren</h4>
             <p>Bei nicht zufriedenstellenden Antworten aus oben genannter Kontaktmöglichkeit können Sie sich mittels Beschwerde an die Österreichische Forschungsförderungsgesellschaft (FFG) wenden.</p>
             <p>
-                <a href="https://www.ffg.at/barrierefreiheit/beschwerdestelle" target="_blank" class="btn btn-primary" style="font-size: 0.9rem;">Zur Beschwerdestelle der FFG</a>
+                <a href="https://www.ffg.at/barrierefreiheit/beschwerdestelle" target="_blank" class="btn btn-primary btn-sm">Zur Beschwerdestelle der FFG</a>
             </p>
         </section>
 
@@ -74,7 +71,7 @@
 
     <footer role="contentinfo">
         <div class="container">
-            <p>&copy; 2025 bMARK Start-Up. Alle Rechte vorbehalten. | <a href="barrierefreiheit.html" style="color: white; text-decoration: underline;">Barrierefreiheit</a></p>
+            <p>&copy; 2025 my-bMARK GmbH. Alle Rechte vorbehalten. | <a href="barrierefreiheit.html">Barrierefreiheit</a></p>
         </div>
     </footer>
 </body>
